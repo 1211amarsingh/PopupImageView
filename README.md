@@ -44,7 +44,7 @@ just have to pass string type array / stirng
         });
 
 ## Output 
-![](https://github.com/1211amarsingh/PopupImageView/sample.gif)
+![](https://github.com/1211amarsingh/PopupImageView/blob/master/sample.gif)
 
 ## Demo
 Feel free to clone this project and run in your IDE to see how can be implemented :).
