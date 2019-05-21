@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void imgclick1(View view) {
-        new PopupImageView(context, view, arr_img,0);
+        new PopupImageView(context, view, arr_img, 0);
     }
 
     public void imgclick2(View view) {
-        new PopupImageView(context, view, arr_img,1);
+        new PopupImageView(context, view, arr_img, 1);
 
     }
 
