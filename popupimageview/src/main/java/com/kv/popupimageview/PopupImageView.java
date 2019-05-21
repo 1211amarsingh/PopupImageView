@@ -31,6 +31,16 @@ public class PopupImageView extends PopupWindow {
         viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img));
     }
 
+    public PopupImageView(Context ctx, View baseView, ArrayList<String> arr_img, int selected_position) {
+        super(((LayoutInflater) ctx.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.popup_photo_pager, null), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+        init(baseView);
+
+        ViewPager viewPager = mContentView.findViewById(R.id.view_pager);
+        viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img));
+        viewPager.setCurrentItem(selected_position);
+    }
+
     public PopupImageView(Context ctx, View baseView, String imgage_url) {
         super(((LayoutInflater) ctx.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.popup_photo_full, null), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 

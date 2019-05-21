@@ -30,11 +30,22 @@ public class MainActivity extends AppCompatActivity {
         arr_img.add("https://dummyimage.com/640x360/fff/aaa");
     }
 
-    public void imgclick(View view) {
-        new PopupImageView(context, view, arr_img);
-    }
 
     public void imgclick1(View view) {
-        new PopupImageView(context, view, arr_img.get(0));
+        new PopupImageView(context, view, arr_img,0);
+    }
+
+    public void imgclick2(View view) {
+        new PopupImageView(context, view, arr_img,1);
+
+    }
+
+    public void imgclick3(View view) {
+        new PopupImageView(context, view, arr_img);
+
+    }
+
+    public void imgclick4(View view) {
+        new PopupImageView(context, view, "https://loremflickr.com/640/360");
     }
 }
