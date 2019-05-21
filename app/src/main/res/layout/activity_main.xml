@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D0000000"
     android:orientation="vertical">
 
     <LinearLayout
@@ -8,40 +9,99 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
+        android:padding="5dp"
         android:weightSum="3">
 
-        <ImageView
-            android:id="@+id/img_1"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="imgclick1"
-            android:src="@drawable/gallery" />
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/img_2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:onClick="imgclick2"
-            android:src="@drawable/gallery" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Image Url"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
 
-        <ImageView
-            android:id="@+id/img_3"
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="imgclick1"
+                android:layout_gravity="center"
+                android:src="@drawable/gallery" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="imgclick3"
-            android:src="@drawable/gallery" />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiple Image with Position"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="imgclick2"
+                android:layout_gravity="center"
+                android:src="@drawable/gallery" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiple Image without Position"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="imgclick3"
+                android:layout_gravity="center"
+                android:src="@drawable/gallery" />
+        </LinearLayout>
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/img_4"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="imgclick4"
-        android:src="@drawable/gallery" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Multiple Image with Position, Base Url"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/img_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:onClick="imgclick4"
+            android:src="@drawable/gallery" />
+    </LinearLayout>
 </LinearLayout>
