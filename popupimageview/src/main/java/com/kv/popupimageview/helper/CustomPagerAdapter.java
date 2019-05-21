@@ -17,11 +17,13 @@ public class CustomPagerAdapter extends PagerAdapter {
     private Context mContext;
     private ArrayList<String> arr_img;
     private LayoutInflater mLayoutInflater;
+    private String baseUrl;
 
-    public CustomPagerAdapter(Context context, ArrayList<String> arr_img) {
+    public CustomPagerAdapter(Context context, ArrayList<String> arr_img, String baseUrl) {
         mContext = context;
         this.arr_img = arr_img;
         this.mLayoutInflater = LayoutInflater.from(context);
+        this.baseUrl = baseUrl;
     }
 
     @Override
@@ -42,7 +44,8 @@ public class CustomPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         View itemView = mLayoutInflater.inflate(R.layout.popup_photo_full, container, false);
-        new SetImageBitmap(mContext, itemView, arr_img.get(position));
+        String img_url = baseUrl != null ? baseUrl + arr_img.get(position) : arr_img.get(position);
+        new SetImageBitmap(mContext, itemView, img_url);
         container.addView(itemView);
         return itemView;
     }

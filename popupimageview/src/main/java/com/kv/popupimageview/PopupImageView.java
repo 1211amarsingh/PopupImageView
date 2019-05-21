@@ -22,31 +22,71 @@ public class PopupImageView extends PopupWindow {
 
     private View mContentView;
 
+    /**
+     * dialog with multiple image
+     * @param ctx
+     * @param baseView
+     * @param arr_img
+     */
     public PopupImageView(Context ctx, View baseView, ArrayList<String> arr_img) {
         super(((LayoutInflater) ctx.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.popup_photo_pager, null), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
         init(baseView);
 
         ViewPager viewPager = mContentView.findViewById(R.id.view_pager);
-        viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img));
+        viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img, null));
     }
 
+    /**
+     *  dialog with multiple image and selected item position
+     * @param ctx
+     * @param baseView
+     * @param arr_img
+     * @param selected_position
+     */
     public PopupImageView(Context ctx, View baseView, ArrayList<String> arr_img, int selected_position) {
         super(((LayoutInflater) ctx.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.popup_photo_pager, null), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
         init(baseView);
 
         ViewPager viewPager = mContentView.findViewById(R.id.view_pager);
-        viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img));
+        viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img, null));
         viewPager.setCurrentItem(selected_position);
     }
 
-    public PopupImageView(Context ctx, View baseView, String imgage_url) {
+    /**for multiple image with base url and selected item position
+     * @param ctx
+     * @param baseView
+     * @param baseUrl
+     * @param arr_img
+     * @param selected_position
+     */
+    public PopupImageView(Context ctx, View baseView, String baseUrl, ArrayList<String> arr_img, int selected_position) {
+        super(((LayoutInflater) ctx.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.popup_photo_pager, null), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+        init(baseView);
+
+        ViewPager viewPager = mContentView.findViewById(R.id.view_pager);
+        if (baseUrl.equalsIgnoreCase("")) {
+            baseUrl = null;
+        }
+        viewPager.setAdapter(new CustomPagerAdapter(ctx, arr_img, baseUrl));
+        viewPager.setCurrentItem(selected_position);
+    }
+
+    /**
+     * dialog with single image
+     *
+     * @param ctx
+     * @param baseView
+     * @param image_url
+     */
+    public PopupImageView(Context ctx, View baseView, String image_url) {
         super(((LayoutInflater) ctx.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.popup_photo_full, null), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
         init(baseView);
 
-        new SetImageBitmap(ctx, mContentView, imgage_url);
+        new SetImageBitmap(ctx, mContentView, image_url);
     }
 
     private void init(View baseView) {
