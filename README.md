@@ -4,13 +4,19 @@ just have to pass string type array / stirng
 
 ## Usage
 
-* Use with single image url:->    
-    ```new PopupImageView(context, view, "imageurl");```
-
-
-* Use with multiple image url:->    
-    ```new PopupImageView(context, view, array_image);```
-
+*  Use with single image url:->    
+    ```new PopupImageView(context, view, "imageurl");```<br><br>
+    
+*  Use with multiple image url:->    
+    ```new PopupImageView(context, view, array_image);```<br><br>
+    
+*  Use with multiple image url and selected item:->    
+    ```new PopupImageView(context, view, array_image, position);```<br><br>
+    
+*  Use with multiple image url with base url and selected item:->    
+    ```new PopupImageView(context, view, array_image, position, baseUrl);```
+    
+    
 ## Gradle
 **Step 1.** Add the JitPack repository to your build file
     Add it in your root build.gradle at the end of repositories:
