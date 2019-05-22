@@ -1,4 +1,4 @@
-package com.kv.imageviewpagerwithimagezoom;
+package com.kv.popupimageviews1;
 
 import org.junit.Test;
 
