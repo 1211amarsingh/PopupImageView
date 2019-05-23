@@ -50,5 +50,8 @@ just have to pass string type array / stirng
 Feel free to clone this project and run in your IDE to see how can be implemented :).
 
 ## Version
-Version 1.1.0, which helps you to add library in sdk version 16.
-[![](https://jitpack.io/v/1211amarsingh/PopupImageView.svg)](https://jitpack.io/#1211amarsingh/PopupImageView)
+Latest Version : [![](https://jitpack.io/v/1211amarsingh/PopupImageView.svg)](https://jitpack.io/#1211amarsingh/PopupImageView)
+
+<p align="center">
+	<a href="https://play.google.com/store/apps/details?id=com.kv.popupimageviews1">
+		<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" style="max-width:100%;" width="30%"/>
