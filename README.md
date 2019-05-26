@@ -71,14 +71,14 @@ Latest Version : [![](https://jitpack.io/v/1211amarsingh/PopupImageView.svg)](ht
 
 <b>▷ Other Apps:</b>
 
-* Swiggy Address Pick <div><a href="https://play.google.com/store/apps/details?id=com.kv.swiggyaddresspick">Download</a></div>
-* Call Recorder Free <div><a href="https://play.google.com/store/apps/details?id=com.kv.callrecorder">Download</a></div>
-* Popup Image View <div><a href="https://play.google.com/store/apps/details?id=com.kv.popupimageviews1">Download</a></div>
+*  <a href="https://play.google.com/store/apps/details?id=com.kv.callrecorder">Call Recorder Free</a>
+*  <a href="https://play.google.com/store/apps/details?id=com.kv.swiggyaddresspick">Swiggy Address Pick</a>
+*  <a href="https://play.google.com/store/apps/details?id=com.kv.popupimageviews1">Popup Image View</a>
           
-<b>▷ Library:</b>
+<b>▷ Other Library:</b>
 
-- Swiggy Address Pick <div><a href="https://github.com/1211amarsingh/swiggy">Open</a></div>
-- Popup Image View <div><a href="https://github.com/1211amarsingh/PopupImageView">Open</a></div>
+- <a href="https://github.com/1211amarsingh/swiggy">Swiggy Address Pick</a>
+- <a href="https://github.com/1211amarsingh/PopupImageView">Popup Image View</a>
 
 
 ---------------------------------------------------------
