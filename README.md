@@ -1,6 +1,19 @@
 # PopupImageView : Popup Image Dialog just by one click
 Image View in dialog like whatspp... single image and multiple image view.
-just have to pass string type array / stirng 
+just have to pass string type array / stirng<br>
+With this library enables you to display photos in popup view. 
+Highly recommended for view multiple image in a view using url or local storage.
+
+<b>▷ Key Features:</b>
+
+✔ works with any version of app and display<br>
+✔ supports any image format load  (jpg, jpeg, png, webp, gif ) from url or local storage<br>
+✔ zoom by gesture<br>
+✔ swipe to change image<br>
+✔ move image by drag<br>
+✔ selected a desired position of image<br>
+✔ close the image by pressing x button<br>
+✔ cache data to quickly reopen images you've seen recently<br>
 
 ## Usage
 
