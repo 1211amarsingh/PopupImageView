@@ -1,6 +1,19 @@
 # PopupImageView : Popup Image Dialog just by one click
 Image View in dialog like whatspp... single image and multiple image view.
-just have to pass string type array / stirng 
+just have to pass string type array / stirng<br>
+With this library enables you to display photos in popup view. 
+Highly recommended for view multiple image in a view using url or local storage.
+
+<b>▷ Key Features:</b>
+
+✔ works with any version of app and display<br>
+✔ supports any image format load  (jpg, jpeg, png, webp, gif ) from url or local storage<br>
+✔ zoom by gesture<br>
+✔ swipe to change image<br>
+✔ move image by drag<br>
+✔ selected a desired position of image<br>
+✔ close the image by pressing x button<br>
+✔ cache data to quickly reopen images you've seen recently<br>
 
 ## Usage
 
@@ -50,5 +63,12 @@ just have to pass string type array / stirng
 Feel free to clone this project and run in your IDE to see how can be implemented :).
 
 ## Version
-Version 1.1.0, which helps you to add library in sdk version 16.
-[![](https://jitpack.io/v/1211amarsingh/PopupImageView.svg)](https://jitpack.io/#1211amarsingh/PopupImageView)
+Latest Version : [![](https://jitpack.io/v/1211amarsingh/PopupImageView.svg)](https://jitpack.io/#1211amarsingh/PopupImageView)
+
+<p align="center">
+	<a href="https://play.google.com/store/apps/details?id=com.kv.popupimageviews1">
+		<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" style="max-width:100%;" width="30%"/></a>
+
+---------------------------------------------------------
+We're always excited to hear from you! If you have any request, suggestions, feedback, questions, or concerns, please email us at:
+<a href="mailto:1211AMARSINGH@GMAIL.COM" >1211AMARSINGH@GMAIL.COM</a>
