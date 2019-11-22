@@ -1,12 +1,15 @@
 package com.kv.popupimageview.helper;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
+
+import androidx.annotation.NonNull;
+//import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.kv.popupimageview.R;
 
